@@ -1,0 +1,100 @@
+bash
+
+
+bash is case sensitive
+
+$sudo
+allows users to execute commands with elevated privileges. 15m lockout
+
+turn the machine off instantly
+$shutdown now
+
+restarting
+$shutdown -r now
+
+change current directory
+$cd
+
+change to the directory you were just in
+$cd -
+
+will also output directory path
+denote the current directory with "."
+denote one directory above with ".."
+
+linux directory structures are denoted with "/"
+
+look at files within a directory
+$ls
+
+as a list
+$ls -l
+
+include hidden files
+$ls -a
+
+you can chain multiple options together eg
+$ls -la
+
+return filenames with directory path
+$ls dir/path/*
+
+make a new directory 
+$mkdir directorname
+cannot create a directory with the same name as a file in that directory
+
+copy a file
+$cp filename location
+
+copy folder contents
+$cp ./foldername/* location
+
+copying directories instead of just contents
+$cp -r directory destination
+
+remove a file
+$rm filename
+
+removing a directory
+$rm -r directoryname
+
+output every executable command
+$compgen -c 
+list is greppable
+
+get-alias in bash
+$compgen -a 
+
+list all the other shell builtin commands
+$compgen -b  
+
+return a list of keywords
+$compgen -k
+
+look at history of executed commands
+$history
+only displays up to 1000
+
+search command history
+$history | grep "search"
+
+recall command used by number
+$!204
+
+output all installed packages
+$apt list --installed
+
+instal package by file
+$dpkg -i packagename
+
+install package by public repo
+add repository key then
+$apt install packagename
+
+completely remove a package
+$apt --purge remove packagename
+
+
+do not use the force flag, instead:
+fix whatever would cause you to use -f
+
